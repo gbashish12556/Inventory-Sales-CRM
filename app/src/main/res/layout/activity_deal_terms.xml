@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.truebil.crm.Activities.DealTermsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:id="@+id/activity_deal_terms_back_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+            android:padding="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_left"/>
+
+        <TextView
+            android:id="@+id/activity_deal_terms_header_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="AGREEMENT"
+            android:textColor="#FF444A59"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/activity_deal_terms_error_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="Email Address is required"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/background_orange_bottom_rounded"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/activity_deal_terms_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:tabTextAppearance="@style/TabLayoutBackground"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="#5d6cbe"
+        app:tabTextColor="#7D8AA1"
+        app:tabSelectedTextColor="#5C6AC4"
+        app:tabIndicatorHeight="3dp"
+        app:tabGravity="center"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_deal_terms_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"/>
+
+</LinearLayout>

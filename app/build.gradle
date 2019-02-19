@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file("crm-android-debug-keystore.keystore")
+            storePassword "android"
+            keyAlias "crm-android-debug-alias"
+            keyPassword "android"
+        }
+        release {
+            storeFile file("crm-android-release-keystore.keystore")
+            storePassword 'Q9csR7uG'
+            keyAlias 'crm-android-release-alias'
+            keyPassword 'wSWNdfg7'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.truebil.crm"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 13
+        versionName "1.10.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+
+        debugLocal {
+            //buildConfigField 'String', 'API_PATH', '"http://10.0.2.2:8000"'
+            buildConfigField 'String', 'API_PATH', '"http://192.168.0.105:8010"'
+
+            resValue "string", "app_name", "CRM Local"
+            applicationIdSuffix ".debug.local"
+
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+
+        debugDev {
+            buildConfigField 'String', 'API_PATH', '"https://inventory.oldhonk.co.in"'
+
+            resValue "string", "app_name", "CRM Dev"
+            applicationIdSuffix ".debug.dev"
+
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+
+        debugProd {
+            buildConfigField 'String', 'API_PATH', '"https://inventory.truebil.com"'
+
+            resValue "string", "app_name", "CRM Prod"
+            applicationIdSuffix ".debug.prod"
+
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            buildConfigField 'String', 'API_PATH', '"https://inventory.truebil.com"'
+
+            resValue "string", "app_name", "Truebil Sales CRM"
+
+            minifyEnabled true
+            debuggable false
+            //shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Remove "Debug" config from the build variant list
+    android.variantFilter { variant ->
+        if (variant.buildType.name == 'debug') {
+            variant.setIgnore(true)
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.amazonaws:aws-android-sdk-core:2.7.5'
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.7.5'
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.7.5'
+    implementation 'com.amazonaws:aws-android-sdk-ddb:2.7.5'
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.google.firebase:firebase-config:16.1.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.6'
+}
+
+apply plugin: 'com.google.gms.google-services'

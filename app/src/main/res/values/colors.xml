@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+    <color name="colorPrimary">#5C6AC4</color>
+    <color name="colorPrimaryDark">#5C6AC4</color>
+    <color name="colorAccent">#5C6AC4</color>
+    <color name="colorNavyblack">#444A59</color>
+
+    <!--Custom Colors for Truebil-->
+
+    <color name="suggested_price_background">#03A9F4</color>
+    <color name="truescore_background">#008A6A</color>
+    <color name="button_blue_background">#5C6AC4</color>
+    <color name="button_light_blue_background">#b9c1f7</color>
+    <color name="bid_button_light_blue_background">#b9c1f7</color>
+    <color name="text_light_grey">#A3AEC2</color>
+    <color name="text_dark_grey">#444A59</color>
+    <color name="border_grey">#A3AEC2</color>
+    <color name="search_box_grey">#EDEDF5</color>
+    <color name="disabled_button_background">#f5f5f5</color>
+    <color name="orange_background"> #FF7143</color>
+    <color name="winning_green">#00B289</color>
+
+    <color name="light_grey">#e0dfdf</color>
+    <color name="pure_white">#fff</color>
+
+    <color name="textColorPrimary">#37474F</color>
+
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">@color/black</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+>>>>>>> develop
+</resources>

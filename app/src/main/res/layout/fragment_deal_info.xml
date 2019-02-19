@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/fragment_deal_info_super_linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_deal_info_car_value_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_deal_info_car_value_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#444A59"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLength="9"
+                    android:hint="Car Value (in Rupees)" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_deal_info_date_delivery_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_deal_info_date_delivery_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#444A59"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:focusableInTouchMode="false"
+                    android:hint="Scheduled Date Of Delivery" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/service_warranty_prompt"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <include layout="@layout/item_services_selection_header"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragement_deal_info_service_warranty_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/paper_transfer_prompt"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <include layout="@layout/item_services_selection_header"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragement_deal_info_paper_transfer_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="Insurance"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <include layout="@layout/item_services_selection_header"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/fragment_deal_info_insurance_required_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Insurance"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="#444A59"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/fragment_deal_info_insurance_amount_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:maxLength="9"
+                    android:textSize="17sp"
+                    android:textColor="#444A59"
+                    android:inputType="number"
+                    android:hint="₹0"
+                    android:fontFamily="sans-serif-medium"
+                    android:backgroundTint="@color/light_grey" />
+
+                <Switch
+                    android:id="@+id/fragment_deal_info_insurance_inclusive_switch"
+                    android:layout_width = "wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/fragment_deal_info_insurance_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/fragment_deal_info_truebil_direct_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Truebil Direct Team"/>
+
+                <RadioButton
+                    android:id="@+id/fragment_deal_info_postsales_team_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Postsales Team"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="Adjustment"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <include layout="@layout/item_services_selection_header"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragement_deal_info_ajustment_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/octroi_prompt"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <include layout="@layout/item_services_selection_header"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragement_deal_info_octroi_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="Amount collection (Exclusive Paper Transfer Services)"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <Spinner
+                android:id="@+id/fragment_deal_info_amount_collection_spinner"
+                android:layout_width="fill_parent"
+                android:textColor="#7D8AA1"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"
+                android:prompt="@string/amount_collection_exclusive_prompt" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7D8AA1"
+                android:layout_margin="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="Seller RTO"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <Spinner
+                android:id="@+id/fragment_deal_info_seller_rto_spinner"
+                android:layout_width="fill_parent"
+                android:textColor="#7D8AA1"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"
+                android:prompt="@string/seller_rto_prompt" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7D8AA1"
+                android:layout_margin="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="Category Of Transfer"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <Spinner
+                android:id="@+id/fragment_deal_info_transfer_category_spinner"
+                android:layout_width="fill_parent"
+                android:textColor="#7D8AA1"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"
+                android:prompt="@string/category_of_transfer_prompt" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7D8AA1"
+                android:layout_margin="4dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_deal_info_internal_note_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_deal_info_internal_note_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#444A59"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Internal Note" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_deal_info_send_message_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_deal_info_send_message_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#444A59"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Send Message To Customer" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/fragment_deal_info_buyer_info_linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_left_arrow_purple"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#5C6AC4"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:text="Buyer Info"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_deal_info_load_info_linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#5C6AC4"
+                        android:text="Loan Info"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <ImageButton
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_right_arrow_purple"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/fragment_deal_info_progress_bar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:background="@android:color/white"
+    tools:context="com.truebil.crm.Activities.SalesActivity">
+
+    <!-- NO SHADOW AS PER DESIGN -->
+    <LinearLayout
+        android:id="@+id/activity_sales_header_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clipToPadding="false"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/activity_sales_header_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales Activity Header"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/activity_sales_user_details_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:text="Name | Phone"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_sales_frame_layout"
+        android:layout_below="@id/activity_sales_header_linear_layout"
+        android:layout_above="@id/activity_sales_bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/activity_sales_bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="12dp"
+        app:itemIconTint="@drawable/background_bottom_navigation"
+        app:itemTextColor="@drawable/background_bottom_navigation"
+        app:menu="@menu/nav_items" />
+
+</RelativeLayout>
+

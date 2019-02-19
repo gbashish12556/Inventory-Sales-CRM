@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "95203069185",
+    "firebase_url": "https://truebil-crm-app.firebaseio.com",
+    "project_id": "truebil-crm-app",
+    "storage_bucket": "truebil-crm-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95203069185:android:250ab7ff72ecc5f6",
+        "android_client_info": {
+          "package_name": "com.truebil.crm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95203069185-h3gthn1vtv2memgc3rau25v7fiken7go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7u_-HkYm3XiY3TfSJ8QXWAM4x8_1s2AA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95203069185:android:68cf12fbb94337fa",
+        "android_client_info": {
+          "package_name": "com.truebil.crm.debug.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95203069185-h3gthn1vtv2memgc3rau25v7fiken7go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7u_-HkYm3XiY3TfSJ8QXWAM4x8_1s2AA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95203069185:android:7f9cafb976ea67a1",
+        "android_client_info": {
+          "package_name": "com.truebil.crm.debug.local"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95203069185-h3gthn1vtv2memgc3rau25v7fiken7go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7u_-HkYm3XiY3TfSJ8QXWAM4x8_1s2AA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

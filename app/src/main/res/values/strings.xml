@@ -1,0 +1,115 @@
+<resources>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="your_mobile_no">Your mobile no</string>
+    <string name="login">Login</string>
+    <string name="action_settings">Settings</string>f
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_Phone">Phone</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_Phone">Enter valid Phone number</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="car_payment_rupees">Payment For Car (in Rupees)</string>
+    <string name="service_payment_rupees">Payment For Service (in Rupees)</string>
+    <string name="truebil_offer_rupees">Truebil Final Offer (In Rupees)</string>
+    <string name="buyer_offer_rupees">Buyer Final Offer (In Rupees)</string>
+    <string name="mobile_no">Mobile No</string>
+
+    <!-- LOCALITY SPINNER -->
+    <string name="locality_prompt">Select a locality *</string>
+
+    <!-- BUYER RTO -->
+    <string name="buyer_rto_prompt">Select a buyer RTO *</string>
+
+    <!-- BUYER TYPE -->
+    <string name="buyer_type_prompt">Select Buyer Type *</string>
+
+    <!-- INSURANCE -->
+    <string name="insurance_req_prompt">Select Insurance Type *</string>
+
+    <!-- SERVICE WARRANTY SPINNER -->
+    <string name="service_warranty_prompt">Service Warranty</string>
+
+    <string name="paper_transfer_inclusive_prompt">Paper Transfer services (Inclusive)</string>
+
+    <string name="paper_transfer_exclusive_prompt">Paper Transfer services (Exclusive)</string>
+
+    <string name="paper_transfer_prompt">Paper Transfer services</string>
+
+    <string name="octroi_prompt">Octroi</string>
+
+    <string name="amount_collection_exclusive_prompt">Select Amount collection *</string>
+
+    <string name="loan_request_prompt">Select Loan Requirement *</string>
+
+    <string name="seller_rto_prompt">Select Seller RTO *</string>
+
+    <string name="category_of_transfer_prompt">Select Category Of Transfer *</string>
+
+    <!-- ACCOUNT TYPE -->
+    <string name="account_type_prompt">Select Account Type *</string>
+
+    <!-- EMPLOYMENT TYPE -->
+    <string name="employment_type_prompt">Select Employment Type *</string>
+
+    <!-- WORKING SINCE SPINNER -->
+    <string name="working_since_prompt">Working Since (years)</string>
+
+    <!-- CURRENTLY STAYING AS -->
+    <string name="currently_staying_prompt">Select Residence Type *</string>
+
+    <!-- STAYING IN CURRENT ADDRESS SINCE -->
+    <string name="staying_since_prompt">Staying in current address since (years)</string>
+
+    <string name="bank_name_prompt">Select Bank *</string>
+
+    <!-- BUYER TYPE -->
+    <string name="loan_tenure_prompt">Select Loan Tenure *</string>
+    <string name="deal_cancellation_prompt">Select Reason for Cancellation *</string>
+    <string name="catered_by_prompt">Select Sales Representative *</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Bottom Menu-->
+    <string name="bottom_menu_visits">VISITS</string>
+    <string name="bottom_menu_allcars">ALL CARS</string>
+    <string name="bottom_menu_follow_ups">FOLLOW UPS</string>
+    <string name="bottom_menu_more">MORE</string>
+
+    <!--Fragment Titles-->
+    <string name="title_fragment_visits">VISITS</string>
+    <string name="title_fragment_allcars">ALL CARS</string>
+    <string name="title_fragment_follow_ups">FOLLOW UPS</string>
+    <string name="title_fragment_more">MORE</string>
+
+    <!--Plain Text-->
+    <string name="twelve_month_warranty">12 Month Warranty-Cross-sell Successful</string>
+    <string name="no_extra_service">No extra service Cross-sold</string>
+    <string name="rsa_cross_sell">RSA Cross-sell successful</string>
+
+    <!--Symbol-->
+    <string name="rs_symbol">\u20B9</string>
+
+    <string-array name="deliverydate">
+        <item>Schedule Delivery Date</item>
+        <item>tomorrow</item>
+        <item>day-after-tomorrow</item>
+    </string-array>
+
+    <string name="is_there_any_prompt">Is there any loan </string>
+    <string-array name="loan">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <!--Hypothecation-->
+    <string name="hypothecation_prompt">Select Hypothecation *</string>
+
+    <!-- No Listing Item -->
+    <string name="no_activity">Oops! No activity here</string>
+    <string name="no_offer">Oops! No offers here</string>
+    <string name="no_invoice">Oops! No invoices here</string>
+
+</resources>

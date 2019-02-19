@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/fragment_buyer_info_super_linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_buyer_info_name_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_buyer_info_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#444A59"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fragment_buyer_info_phone_text_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.App.TextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_buyer_info_phone_text_view"
+                        android:layout_width="match_parent"
+                        android:textColor="#444A59"
+                        android:textSize="15sp"
+                        android:maxLength="10"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:inputType="phone"
+                        android:fontFamily="sans-serif-medium"
+                        android:hint="Contact No" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fragment_buyer_info_alternate_phone_text_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.App.TextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_buyer_info_alternate_phone_edit_text"
+                        android:layout_width="match_parent"
+                        android:textColor="#444A59"
+                        android:textSize="15sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:inputType="phone"
+                        android:hint="Alternate Contacts" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_buyer_info_email_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_buyer_info_email_edit_text"
+                    android:layout_width="match_parent"
+                    android:textColor="#444A59"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email ID"
+                    android:fontFamily="sans-serif-medium" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="Select Buyer Type"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <Spinner
+                android:id="@+id/fragment_buyer_info_buyer_type_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#7D8AA1"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:prompt="@string/buyer_type_prompt" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#7D8AA1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="Select a Locality"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <Spinner
+                android:id="@+id/fragment_buyer_info_locality_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#7D8AA1"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:prompt="@string/locality_prompt"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#7D8AA1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="Select an RTO"
+                android:textSize="13sp"
+                android:textColor="#7D8AA1"/>
+
+            <Spinner
+                android:id="@+id/fragment_buyer_info_buyer_rto_spinner"
+                android:layout_width="fill_parent"
+                android:textColor="#7D8AA1"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"
+                android:prompt="@string/buyer_rto_prompt"
+                android:fontFamily="sans-serif-medium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:background="#7D8AA1" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_buyer_info_buyer_pan_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                style="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_buyer_info_buyer_pan_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#444A59"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Buyer PAN" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/buyer_info_fragment_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="4dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#7D8AA1"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:id="@+id/buyer_info_fragment_deal_info_linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#5C6AC4"
+                        android:textSize="20sp"
+                        android:text="Deal Info"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <ImageButton
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_right_arrow_purple"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/fragment_buyer_info_progress_bar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+

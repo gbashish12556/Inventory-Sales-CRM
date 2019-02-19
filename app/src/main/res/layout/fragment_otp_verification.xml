@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingTop="48dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:orientation="vertical"
+    tools:context=".Fragments.OtpVerificationFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Please verify"
+        android:textColor="#444A59" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fragment_otp_verification_phone_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="8888888888"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/fragment_otp_verification_edit_phone_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:textSize="24dp"
+            android:lineSpacingExtra="4.5dp"
+            android:text="Edit"
+            android:textColor="#5C6AC4"
+            android:fontFamily="sans-serif-medium"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fragment_otp_verification_otp_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:textSize="24sp"
+        android:inputType="phone"
+        android:maxLength="4"
+        android:fontFamily="sans-serif-medium"
+        android:hint="4 Digit OTP"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp">
+
+        <TextView
+            android:id="@+id/fragment_otp_verification_verify_otp_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@drawable/background_button_purple"
+            android:text="Verify OTP"
+            android:textAllCaps="false"
+            android:textAlignment="center"/>
+
+        <ProgressBar
+            android:id="@+id/fragment_otp_verification_progress_bar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/Progressbar.White"
+            android:layout_marginRight="8dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Not received yet?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/fragment_otp_verification_resend_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="16sp"
+            android:text="Resend"
+            android:textColor="#5C6AC4"
+            android:fontFamily="sans-serif-medium"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_otp_verification_wrong_otp_textview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/background_orange_text"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Please enter a valid otp"/>
+
+</LinearLayout>

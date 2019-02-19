@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/fragment_loan_info_super_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="#EDEDF5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:text="NEED LOAN?"/>
+
+                <Switch
+                    android:id="@+id/fragment_loan_info_need_loan_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true"
+                    android:padding="8dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_loan_info_loan_form_linear_layout"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Employment Type"
+                    android:textSize="13sp"
+                    android:textColor="#7D8AA1"/>
+
+                <Spinner
+                    android:id="@+id/fragment_loan_info_employment_type_spinner"
+                    android:layout_width="fill_parent"
+                    android:textColor="#FF7D8AA1"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:prompt="@string/employment_type_prompt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7D8AA1"
+                    android:layout_margin="4dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_loan_info_working_since_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Working Since (years)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="3"
+                        android:singleLine="true"
+                        android:textColor="#444A59"
+                        android:textSize="15sp"
+                        android:fontFamily="sans-serif-medium" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Currently Staying As"
+                    android:textSize="13sp"
+                    android:textColor="#7D8AA1"/>
+
+                <Spinner
+                    android:id="@+id/fragment_loan_info_stay_type_spinner"
+                    android:layout_width="fill_parent"
+                    android:textColor="#FF7D8AA1"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:prompt="@string/currently_staying_prompt"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7D8AA1"
+                    android:layout_margin="4dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_loan_info_stay_years_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Staying in current address since (years)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        android:textColor="#444A59"
+                        android:textSize="15sp"
+                        android:fontFamily="sans-serif-medium" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_loan_info_age_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="3"
+                        android:singleLine="true"
+                        android:textColor="#444A59"
+                        android:textSize="15sp"
+                        android:fontFamily="sans-serif-medium" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_loan_info_annual_income_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#444A59"
+                        android:textSize="15sp"
+                        android:maxLength="6"
+                        android:fontFamily="sans-serif-medium"
+                        android:inputType="number"
+                        android:hint="Annual Income(Lakh)" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_load_info_loan_amount_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#444A59"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:maxLength="9"
+                        android:fontFamily="sans-serif-medium"
+                        android:inputType="number"
+                        android:hint="Loan Amount Required ( In Rs.)" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Loan Tenure"
+                    android:textSize="13sp"
+                    android:textColor="#7D8AA1"/>
+
+                <Spinner
+                    android:id="@+id/fragment_load_info_loan_tenure_spinner"
+                    android:layout_width="fill_parent"
+                    android:textColor="#FF7D8AA1"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/loan_tenure_prompt"/>
+
+                <EditText
+                    android:id="@+id/fragment_loan_info_tenure_other_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#444A59"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:hint="Enter Loan Tenure"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="8dp"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7D8AA1"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Select Bank"
+                    android:textSize="13sp"
+                    android:textColor="#7D8AA1"/>
+
+                <Spinner
+                    android:id="@+id/fragment_load_info_current_bank_spinner"
+                    android:layout_width="fill_parent"
+                    android:textColor="#FF7D8AA1"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/bank_name_prompt"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7D8AA1"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Account Type"
+                    android:textSize="13sp"
+                    android:textColor="#7D8AA1"/>
+
+                <Spinner
+                    android:id="@+id/fragment_load_info_account_type_spinner"
+                    android:layout_width="fill_parent"
+                    android:textColor="#FF7D8AA1"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/account_type_prompt"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7D8AA1"
+                    android:layout_margin="4dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_load_info_loan_note_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#444A59"
+                        android:textSize="15sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:hint="Loan Note" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_loan_info_deal_info_linear_layout"
+                    android:baselineAligned="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:adjustViewBounds="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_left_arrow_purple"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#5C6AC4"
+                        android:text="Deal Info"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_loan_info_pay_token_linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Pay Token"
+                        android:textSize="20sp"
+                        android:textColor="#5C6AC4"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ic_right_arrow_purple"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/fragment_loan_info_progress_bar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/fragment_deal_terms_services_list_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#444A59"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:gravity="end"
+                    android:text="Total Amount"/>
+
+                <TextView
+                    android:id="@+id/fragment_deal_terms_total_amount_textview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#444A59"
+                    android:textSize="17sp"
+                    android:gravity="end"
+                    android:text="₹0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#444A59"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:gravity="end"
+                    android:text="Total Paid For Car"/>
+
+                <TextView
+                    android:id="@+id/fragment_deal_terms_total_paid_for_car_textview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#444A59"
+                    android:textSize="17sp"
+                    android:gravity="end"
+                    android:text="₹0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#444A59"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:gravity="end"
+                    android:text="Total Paid For Service"/>
+
+                <TextView
+                    android:id="@+id/fragment_deal_terms_total_paid_for_service_textview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#444A59"
+                    android:textSize="17sp"
+                    android:gravity="end"
+                    android:text="₹0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#444A59"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:gravity="end"
+                    android:text="Total Pending"/>
+
+                <TextView
+                    android:id="@+id/fragment_deal_terms_total_pending"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#444A59"
+                    android:textSize="17sp"
+                    android:gravity="end"
+                    android:text="₹0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/fragment_deal_terms_cancel_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textSize="20sp"
+                android:textColor="#5C6AC4"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Cancel"
+                android:includeFontPadding="false"
+                android:fontFamily="sans-serif-medium"/>
+
+            <LinearLayout
+                android:id="@+id/fragment_deal_terms_pay_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#5C6AC4"
+                    android:text="Pay Part or Full"
+                    android:includeFontPadding="false"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_right_arrow_purple"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/fragment_deal_terms_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

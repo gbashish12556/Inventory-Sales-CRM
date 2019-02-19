@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal">
+        
+        <LinearLayout
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/background_date_view"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+           
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444A59"
+                android:id="@+id/month"
+                android:textSize="12sp"
+                android:includeFontPadding="false"
+                android:fontFamily="sans-serif-medium"
+                android:text="MAR"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:textColor="#444A59"
+                android:textSize="17sp"
+                android:includeFontPadding="false"
+                android:fontFamily="sans-serif-medium"
+                android:text="24"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/buyer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444A59"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Name"/>
+
+            <TextView
+                android:id="@+id/buyer_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444A59"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="visible"
+                android:text="Offer: ₹L"/>
+
+            <TextView
+                android:id="@+id/item_user_list_representative_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444A59"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="visible"
+                android:text="Rep:"/>
+
+            <TextView
+                android:id="@+id/item_user_list_offer_type_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button_blue_background"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Truebil Offer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end|center_vertical">
+
+            <TextView
+                android:id="@+id/item_user_status_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF7143"
+                android:textSize="11sp"
+                android:layout_gravity="end"
+                android:visibility="visible"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="true"
+                android:text="PAYMENT PENDING" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:id="@+id/call_buyer_button"
+                android:layout_gravity="end"
+                android:src="@drawable/phone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_grey"/>
+
+</LinearLayout>

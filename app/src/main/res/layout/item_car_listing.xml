@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/item_car_listing_image_view"
+        android:layout_width="136dp"
+        android:layout_height="90dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
+
+    <!--
+    <TextView
+        android:id="@+id/item_car_listing_visit_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_car_listing_image_view"
+        android:layout_alignTop="@id/item_car_listing_image_view"
+        android:text="14 May"
+        android:paddingRight="6dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:background="@drawable/background_date_rounded_corner"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"/>
+    -->
+
+    <LinearLayout
+        android:id="@+id/item_car_listing_info_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_car_listing_image_view"
+        android:layout_toEndOf="@id/item_car_listing_image_view"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_car_listing_manufacturing_year_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:minHeight="0dp"
+                android:textColor="#444A59"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="2010"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text=" "/>
+
+            <TextView
+                android:id="@+id/item_car_listing_variant_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#444A59"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="Alto LXI"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text=" "/>
+
+            <TextView
+                android:id="@+id/item_car_listing_fuel_type_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#444A59"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="Petrol"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_car_listing_mileage_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#444A59"
+                android:includeFontPadding="false"
+                android:text="32345 km"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:includeFontPadding="false"
+                android:text=", "/>
+
+            <TextView
+                android:id="@+id/item_car_listing_owner_details_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#444A59"
+                android:includeFontPadding="false"
+                android:text="1st Owner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_car_listing_offer_count_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/darker_gray"
+                android:includeFontPadding="false"
+                android:text="30 offers"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/darker_gray"
+                android:includeFontPadding="false"
+                android:text=" • "/>
+
+            <TextView
+                android:id="@+id/item_car_listing_testdrive_count_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/darker_gray"
+                android:includeFontPadding="false"
+                android:text="16 Testdrive"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:layout_marginTop="8dp">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_car_listing_price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#444A59"
+                    android:includeFontPadding="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="20sp"
+                    android:text="₹3.45L"/>
+
+                <TextView
+                    android:id="@+id/item_car_listing_user_status_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Just Had a Test Dr"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:background="#00B289"
+                    android:padding="4dp"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="true"
+                    android:includeFontPadding="false"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/item_car_listing_add_image_button"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_plus"
+                    android:background="?android:selectableItemBackground"
+                    android:tint="@color/colorPrimary" />
+
+                <ImageButton
+                    android:id="@+id/item_car_listing_menu_dropdown_button"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_menu_dropdown"
+                    android:adjustViewBounds="true"
+                    android:background="?android:selectableItemBackground"
+                    android:tint="@color/colorPrimary" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+    
+</RelativeLayout>

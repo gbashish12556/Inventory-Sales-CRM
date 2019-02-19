@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_user_activity_icon_image_view"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_check_gray"/>
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:background="#A3AEC2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@id/item_user_activity_icon_image_view"
+        android:layout_alignBottom="@id/item_user_activity_details_linear_layout"/>
+
+    <LinearLayout
+        android:id="@+id/item_user_activity_details_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_user_activity_icon_image_view"
+        android:layout_toRightOf="@id/item_user_activity_icon_image_view"
+        android:layout_toEndOf="@id/item_user_activity_icon_image_view"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_user_activity_heading_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#444A59"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="₹50,000 paid as part payment"/>
+
+        <TextView
+            android:id="@+id/item_user_activity_sub_heading_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#444A59"
+            android:textSize="15sp"
+            android:text="2010 White Suzuki Swift LXI"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#D8DEEB"
+        android:layout_alignBottom="@id/item_user_activity_details_linear_layout"
+        android:layout_alignLeft="@id/item_user_activity_details_linear_layout"
+        android:layout_alignStart="@id/item_user_activity_details_linear_layout"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.DealCancellationActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_deal_cancellation_header_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:id="@+id/activity_deal_cancellation_back_arrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_arrow_left"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/activity_feedback_header_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEAL CANCELLATION"
+            android:textColor="#444A59"
+            android:fontFamily="sans-serif-medium"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/activity_deal_cancellation_progress_bar"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/activity_deal_cancellation_super_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_deal_cancellation_header_relative_layout"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Cancellation Reason?"
+            android:textSize="13sp"
+            android:textColor="#7D8AA1"/>
+
+        <Spinner
+            android:id="@+id/delivery_activity_delivery_deal_cancellation_reason_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7D8AA1"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Catered By?"
+            android:textSize="13sp"
+            android:textColor="#7D8AA1"/>
+
+        <Spinner
+            android:id="@+id/delivery_activity_delivery_deal_cancellation_catered_by_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7D8AA1"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#7D8AA1"
+                android:fontFamily="sans-serif-medium"
+                android:includeFontPadding="false"
+                android:layout_centerVertical="true"
+                android:text="Refund Applicable" />
+
+            <Switch
+                android:id="@+id/refund_applicable_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey"/>
+
+        <LinearLayout
+            android:id="@+id/refund_applicable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/deal_cancellation_activity_refund_amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/deal_cancellation_activity_refund_amount_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#7D8AA1"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"
+                    android:hint="Refundable Amount"
+                    android:backgroundTint="@color/light_grey"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/deal_cancellation_activity_refund_note_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/deal_cancellation_activity_refund_note_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#7D8AA1"
+                    android:textSize="15sp"
+                    android:hint="Refund Note"
+                    android:backgroundTint="@color/light_grey"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/navigate_to_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:padding="4dp"
+                android:text="Cancel"
+                android:includeFontPadding="false"
+                android:textColor="#7D8AA1"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/confirm_request_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:padding="4dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Confirm Request"
+                    android:includeFontPadding="false"
+                    android:textColor="#5C6AC4"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_right_arrow_purple" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

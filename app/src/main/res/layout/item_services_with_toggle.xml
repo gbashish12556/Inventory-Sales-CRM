@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/item_services_with_toggle_is_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/item_services_with_toggle_service_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Paper Transfer Paper Transfer"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#444A59"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/item_services_with_toggle_is_inclusive_service_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:maxLength="9"
+            android:textSize="17sp"
+            android:textColor="#444A59"
+            android:inputType="number"
+            android:hint="₹0"
+            android:fontFamily="sans-serif-medium"
+            android:backgroundTint="@color/light_grey" />
+
+        <Switch
+            android:id="@+id/item_services_with_toggle_is_inclusive_switch"
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
